@@ -1,0 +1,1 @@
+int shift(double*, int);

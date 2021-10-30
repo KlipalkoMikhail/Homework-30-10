@@ -1,0 +1,90 @@
+// Определение равенства элементов последовательности (С МАССИВОМ)
+
+#include <stdio.h>
+#define EPSILON 0.000001
+#define N 200
+
+// 112 Клипалко Михаил Михайлович
+
+int dataprocessing(int count, double number[]);
+int fabs_handmade(double x);
+
+int main(void)
+{
+    double number[N];
+    int count = 0;
+	char filename[120];                                 // память для файла
+	int result;                                         // память под результат
+
+	printf("Test on equal sequence\n");
+	printf("Enter file name: ");                        // ввод имени файла с клавиатуры
+	scanf("%s", filename);                              // чтение имени файла
+
+	FILE* file = fopen(filename, "r");                  // открытие файла для чтения
+
+	if (!file)                                          // если файл не существует
+	{
+		printf("Unable to open %s\n", filename);
+
+		return 1;
+	}
+	else
+	{
+		printf("File has just been opened.\n");
+	}
+
+	while (fscanf(file, "%lf", &number[count]) == 1)                            // считывание числа слева направо до конца файла
+	{
+		if (count > N)
+		{
+			printf("File has too many numbers, last number of the sequence is %lf\n", number[count]); // слишком много чисел в файле
+			break;
+		}
+		count++;
+	}
+
+	if (count == 0)
+    {
+        printf("ERROR: File is empty\n");                               // защита от пустого файла
+        return -1;
+    }
+    if (feof(file) == 0)                                                // защита от некорректных символов в последовательности
+    {
+        printf("ERROR: File has invalid numbers\n");
+        return -1;
+    }
+
+	result = dataprocessing(count, number);
+
+	printf("Scanning...\n");
+	printf("Result %d\n", result);
+
+	return 0;
+}
+
+// 112 Клипалко Михаил Михайлович
+
+int dataprocessing (int count, double number[])            // фукнция определения равенства двух чисел
+{
+    int result = 0;                                                     // результат
+
+    for (int i = 1; i < count; ++i)
+    {
+		if (fabs_handmade(number[i] - number[0]) > EPSILON)             // если считываемое число ПО МОДУЛЮ больше начального
+		{
+			result = -1;                                                // не все члены последовательности равны между собой
+
+			return -1;
+		}
+		result = 1;
+	}
+    return result;
+}
+
+int fabs_handmade(double x)                                             // фунция модуля числа
+{
+   x = (x > 0)? x: -x;
+   return x;
+}
+
+

@@ -1,0 +1,65 @@
+// Определение равенства элементов последовательности
+
+#include <stdio.h>
+#define EPSILON 0.000001
+
+// 112 Клипалко Михаил Михайлович
+
+int dataprocessing(FILE* file);
+int main(void)
+{
+	char filename[120]; // память для файла
+	int result; // память под результат
+
+	printf("Test on equal sequence\n");
+	printf("Enter file name: "); // ввод имени файла с клавиатуры
+	scanf("%s", filename); // чтение имени файла
+
+	FILE* file = fopen(filename, "r"); // открытие файла для чтения
+
+	if (!file) // если файл не существует
+	{
+		printf("Unable to open %s\n", filename);
+
+		return 1;
+	}
+	else
+	{
+		printf("File has just been opened.\n");
+	}
+
+	result = dataprocessing(file); // результат последовательности
+
+	printf("Scanning...\n");
+	printf("Result %d\n", result);
+
+	return 0;
+
+}
+
+// 112 Клипалко Михаил Михайлович
+
+int dataprocessing(FILE* file)
+{
+	double number; // память под действительное число из файла
+	double startnumber = 0; // число для сравнения с другими
+	int result = 0; // вводим результат
+	int sign; // переменная для модуля числа
+
+	fscanf(file, "%lf", &number); // считываем первое число последовательности
+	startnumber = number; // присваиваем значение первого числа числу, с которым будем сравнивать другие члены последовательности
+
+	while (fscanf(file, "%lf", &number) == 1) // считывание числа слева направо до конца файла
+	{
+		sign = (number - startnumber) ? 1: -1; // модуль числа через переменную sign
+		if (sign*(number - startnumber) > EPSILON) // если считываемое число ПО МОДУЛЮ больше начального
+		{
+			result = -1; // не все члены последовательности равны между собой
+
+			return -1;
+		}
+		result = 1;
+	}
+
+	return 1;
+}
