@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1633800581 source:c:\users\klupa\desktop\myprog\compare.c
+	"headers.h"
+
+1635269165 c:\users\klupa\desktop\myprog\headers.h
+
+1635269666 source:c:\users\klupa\desktop\myprog\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"headers.h"
+
+1635269313 source:c:\users\klupa\desktop\myprog\mass_generation.c
+	"headers.h"
+	<stdio.h>
+	<stdlib.h>
+
+1635269292 source:c:\users\klupa\desktop\myprog\mass_read.c
+	"headers.h"
+	<stdio.h>
+
+1635303463 source:c:\users\klupa\desktop\myprog\slow_sort.c
+
+1635269274 source:c:\users\klupa\desktop\myprog\test_sort.c
+	"headers.h"
+	<stdio.h>
+
+1635573528 source:c:\users\klupa\desktop\myprog\merge_mass.c
+	"headers.h"
+
+1635573790 source:c:\users\klupa\desktop\myprog\merge_sort.c
+	"headers.h"
+
+1633800581 source:c:\users\klupa\desktop\dedekind\sort\compare.c
+	"headers.h"
+
+1635575007 c:\users\klupa\desktop\dedekind\sort\headers.h
+
+1635576001 source:c:\users\klupa\desktop\dedekind\sort\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"headers.h"
+
+1635576001 source:c:\users\klupa\desktop\dedekind\sort\mass_generation.c
+	"headers.h"
+	<stdio.h>
+	<stdlib.h>
+
+1635576000 source:c:\users\klupa\desktop\dedekind\sort\mass_read.c
+	"headers.h"
+	<stdio.h>
+
+1635576001 source:c:\users\klupa\desktop\dedekind\sort\merge_mass.c
+	"headers.h"
+
+1635576000 source:c:\users\klupa\desktop\dedekind\sort\merge_sort.c
+	"headers.h"
+
+1635576000 source:c:\users\klupa\desktop\dedekind\sort\slow_sort.c
+	"headers.h"
+
+1635576000 source:c:\users\klupa\desktop\dedekind\sort\test_sort.c
+	"headers.h"
+	<stdio.h>
+
+1635574479 source:c:\users\klupa\desktop\dedekind\sort\min.c
+	"headers.h"
+
+1635574479 source:c:\users\klupa\desktop\dedekind\sort\min_index.c
+	"headers.h"
+

@@ -1,0 +1,10 @@
+// 112 Клипалко Михаил Михайлович
+
+int merge_sort(double*, int);                   // функция сортировки слиянием
+void slow_sort(double*, int);
+void merge_mass(double*, int, int, int, int);   // функция слияния массивов
+int test_sort(double*, int);                    // функция проверки отсортированного массива на упорядоченность
+int min_index(int, int);                          // функция нахождения минимума из целых чисел
+void mass_generation(double*, int);             // функция генерации случайных чисел
+void mass_read(double*, int);                   // функция для сохранения массива, чтобы потом использовать массив в quick сортировке
+int compare(const void *, const void *);        // функция сравнения двух значений из массива

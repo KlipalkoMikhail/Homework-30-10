@@ -1,0 +1,11 @@
+Slow sorting time of 7500 numbers: 0.051000 seconds
+Quick sorting time of 7500 numbers: 0.000000 seconds
+Slow sorting time of 15000 numbers: 0.194000 seconds
+Quick sorting time of 15000 numbers: 0.001000 seconds
+Slow sorting time of 30000 numbers: 0.795000 seconds
+Quick sorting time of 30000 numbers: 0.003000 seconds
+Slow sorting time of 60000 numbers: 3.265000 seconds
+Quick sorting time of 60000 numbers: 0.008000 seconds
+Slow sorting time of 120000 numbers: 16.142000 seconds
+Quick sorting time of 120000 numbers: 0.020000 seconds
+Slow sorting time of 240000 numbers: 
