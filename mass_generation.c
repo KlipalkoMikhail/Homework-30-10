@@ -36,4 +36,3 @@ void mass_generation(double number[], int k)                           // функци
     fclose(fsource);                                                   // закрытие файла с исходным массивом
 
 }
-
