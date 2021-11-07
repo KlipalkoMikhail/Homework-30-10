@@ -1,10 +1,9 @@
 #include "headers.h"
 
-
-void to_binary(int n, int *k)
+int to_binary(int n, int *k)
 {
     int r;
-    if (n == 0) return;
+    if (n == 0) return *k;
     if (n < 0)
     {
         *k += 1;
@@ -14,5 +13,5 @@ void to_binary(int n, int *k)
     if (n >= 2)
         to_binary(n / 2, k);
     if (r == 1) *k += 1;
-    return;
+    return *k;
 }

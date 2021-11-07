@@ -1,12 +1,12 @@
 #include "headers.h"
 #include <stdio.h>
-#define N 4000
+#define N 8000
 
 // 112 Клипалко Михаил Михайлович
 // функция проверки сортировки на упорядоченность
 // получаем в качестве параметров массив чисел и параметр текущей длины массива
 
-int test_sort(double number[], int k)                   // функция проверки отсортированного массива на упорядоченность
+int test_sort(int number[], int k)                   // функция проверки отсортированного массива на упорядоченность
 {
     FILE * fout;                                        // файл с отсортированным массивом
     fout = fopen("out.txt", "a");                       // открытие файла с отсортированными массивами на добавление чисел
@@ -16,7 +16,9 @@ int test_sort(double number[], int k)                   // функция проверки отсо
 
     for (int i = 0; i < k*N - 1; i++)                   // цикл проверки массива на упорядоченность
     {
-        if (number[i] > number[i+1])                    // условие порядка возрастания чисел
+        int u1 = 0;
+        int u2 = 0;
+        if (to_binary(number[i], &u1) > to_binary(number[i+1], &u2))  // условие порядка возрастания чисел
         {
             printf("INCORRECT SORTING.\n");             // неверное упорядочивание
             return -1;
@@ -25,7 +27,7 @@ int test_sort(double number[], int k)                   // функция проверки отсо
 
     for (int s = 0; s < k*N; ++s)                       // цикл записи чисел в fout
     {
-        fprintf(fout, "%lf ", number[s]);
+        fprintf(fout, "%d ", number[s]);
     }
 
     printf("SORTING IS CORRECT.\n");

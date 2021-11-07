@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1636264059 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_analyse.c
+	"headers.h"
+
+1636269096 c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\headers.h
+
+1636262984 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_compare.c
+	"headers.h"
+
+1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_generation.c
+	"headers.h"
+	<stdio.h>
+
+1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_read.c
+	"headers.h"
+	<stdio.h>
+
+1636265341 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_mass.c
+	"headers.h"
+
+1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_sort.c
+	"headers.h"
+
+1635579910 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\min_index.c
+	"headers.h"
+
+1636265316 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\slow_sort.c
+	"headers.h"
+
+1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\test_sort.c
+	"headers.h"
+	<stdio.h>
+
+1636264727 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\to_binary.c
+	"headers.h"
+
+1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"headers.h"
+

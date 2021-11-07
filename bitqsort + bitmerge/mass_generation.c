@@ -1,13 +1,13 @@
 #include "headers.h"
 #include <stdio.h>
-#include <stdlib.h>
-#define N 4000
+#define N 8000
+
 
 // 112 Клипалко Михаил Михайлович
 // функция генерации случайных чисел
 // получаем в качестве параметров массив и параметр длины массива
 
-void mass_generation(double number[], int k)                           // функция генерации случайных чисел
+void mass_generation(int number[], int k)                              // функция генерации случайных чисел
 {
     FILE * fsource;                                                    // файл для сохранения исходного массива
     FILE * fin;                                                        // файл для неотсортированного массива
@@ -17,10 +17,10 @@ void mass_generation(double number[], int k)                           // функци
     printf("Generating %d numbers...\n", k*N);
     for (int i = 0; i < k*N; ++i)                                      // цикл генерации случайных чисел и их запись в исходный файл
     {
-        double A = rand()%10;                                          // целая положительная часть
-        double B = -1*rand()%10;                                       // целая отрицательная часть
-        number[i]= (double)(A + B) + ((double)rand())/RAND_MAX;        // присвоение ячейке i = целая часть + дробная часть
-        fprintf(fsource,"%lf ", number[i]);                            // запись чисел в исходный файл
+        int A = rand()%100;                                          // целая положительная часть
+        int B = -1*rand()%100;                                       // целая отрицательная часть
+        number[i]= A + B;
+        fprintf(fsource,"%d ", number[i]);                            // запись чисел в исходный файл
     }
     printf("Sorting this %d numbers...\n", k*N);
     printf("\n");
@@ -28,8 +28,7 @@ void mass_generation(double number[], int k)                           // функци
     fprintf(fin, "Starting sequence with %d numbers:\n", k*N);
     for (int i = 0; i < k*N; ++i)                                      // цикл записи чисел в файл с неотсортированными массивами
     {
-        fprintf(fin, "%lf ", number[i]);
-        fprintf(fin, "\n");
+        fprintf(fin, "%d ", number[i]);
     }
 
     fclose(fin);                                                       // закрытие файла с неотсортированным массивом
