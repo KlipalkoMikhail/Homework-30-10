@@ -1,0 +1,37 @@
+#include "headers.h"
+#include <stdio.h>
+#include <stdlib.h>
+#define N 8000
+
+// 112 Клипалко Михаил Михайлович
+// функция генерации случайных чисел
+// получаем в качестве параметров массив и параметр длины массива
+
+void mass_generation(int number[], int k)                              // функция генерации случайных чисел
+{
+    FILE * fsource;                                                    // файл для сохранения исходного массива
+    FILE * fin;                                                        // файл для неотсортированного массива
+    fin = fopen("in.txt", "a");                                        // открытие файла с неотсортированным массивом на добавление чисел
+    fsource = fopen("source.txt", "w");                                // открытие файла с исходным массивом на запись
+
+    printf("Generating %d numbers...\n", k*N);
+    for (int i = 0; i < k*N; ++i)                                      // цикл генерации случайных чисел и их запись в исходный файл
+    {
+        int A = rand()%100;                                            // целая положительная часть
+        int B = -1*rand()%100;                                         // целая отрицательная часть
+        number[i]= A + B;
+        fprintf(fsource,"%d ", number[i]);                             // запись чисел в исходный файл
+    }
+    printf("Sorting this %d numbers...\n", k*N);
+    printf("\n");
+
+    fprintf(fin, "Starting sequence with %d numbers:\n", k*N);
+    for (int i = 0; i < k*N; ++i)                                      // цикл записи чисел в файл с неотсортированными массивами
+    {
+        fprintf(fin, "%d ", number[i]);
+    }
+
+    fclose(fin);                                                       // закрытие файла с неотсортированным массивом
+    fclose(fsource);                                                   // закрытие файла с исходным массивом
+
+}

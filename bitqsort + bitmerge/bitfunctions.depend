@@ -1,24 +1,25 @@
 # depslib dependency file v1.0
-1636264059 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_analyse.c
+1636270183 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_analyse.c
 	"headers.h"
 
-1636269096 c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\headers.h
+1636270531 c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\headers.h
 
-1636262984 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_compare.c
+1636270099 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_compare.c
 	"headers.h"
 
-1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_generation.c
+1636270574 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_generation.c
 	"headers.h"
 	<stdio.h>
+	<stdlib.h>
 
 1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_read.c
 	"headers.h"
 	<stdio.h>
 
-1636265341 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_mass.c
+1636269929 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_mass.c
 	"headers.h"
 
-1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_sort.c
+1636270159 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_sort.c
 	"headers.h"
 
 1635579910 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\min_index.c
@@ -27,14 +28,14 @@
 1636265316 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\slow_sort.c
 	"headers.h"
 
-1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\test_sort.c
+1636269929 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\test_sort.c
 	"headers.h"
 	<stdio.h>
 
-1636264727 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\to_binary.c
+1636270531 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\to_binary.c
 	"headers.h"
 
-1636269073 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\main.c
+1636270257 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\main.c
 	<stdio.h>
 	<time.h>
 	<stdlib.h>

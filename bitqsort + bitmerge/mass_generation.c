@@ -1,7 +1,7 @@
 #include "headers.h"
 #include <stdio.h>
+#include <stdlib.h>
 #define N 8000
-
 
 // 112 Клипалко Михаил Михайлович
 // функция генерации случайных чисел
@@ -17,10 +17,10 @@ void mass_generation(int number[], int k)                              // функци
     printf("Generating %d numbers...\n", k*N);
     for (int i = 0; i < k*N; ++i)                                      // цикл генерации случайных чисел и их запись в исходный файл
     {
-        int A = rand()%100;                                          // целая положительная часть
-        int B = -1*rand()%100;                                       // целая отрицательная часть
+        int A = rand()%100;                                            // целая положительная часть
+        int B = -1*rand()%100;                                         // целая отрицательная часть
         number[i]= A + B;
-        fprintf(fsource,"%d ", number[i]);                            // запись чисел в исходный файл
+        fprintf(fsource,"%d ", number[i]);                             // запись чисел в исходный файл
     }
     printf("Sorting this %d numbers...\n", k*N);
     printf("\n");

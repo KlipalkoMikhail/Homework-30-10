@@ -1,17 +1,18 @@
 #include "headers.h"
+
 // 112 Клипалко Михаил Михайлович
 
-int bit_compare(const void *a, const void *b)    // функция сравнения двух чисел из массива
+int bit_compare(const void *a, const void *b)    // функция сравнения двух чисел из массива ПО КОЛИЧЕСТВУ БИТОВ
 {
     const int *c, *d;
-    int p1, p2;
+    int p1, p2;                                  // создаю переменные, чтобы получить их адреса
     c = (const int*)a;
     d = (const int*)b;
-    p1 = *c;
-    p2 = *d;
+    p1 = *c;                                     // кладу в адрес p1 значение c
+    p2 = *d;                                     // кладу в адрес p2 значение d
 
-    bit_analyse(&p1);
-    bit_analyse(&p2);
+    bit_analyse(&p1);                            // считаем количество битов в первом числе
+    bit_analyse(&p2);                            // считаем количество битов во втором числе
 
     if (p1 < p2)
     {
@@ -26,4 +27,3 @@ int bit_compare(const void *a, const void *b)    // функция сравнения двух чисел
         return 0;                                // возращаем знак разности этих чисел
     }
 }
-

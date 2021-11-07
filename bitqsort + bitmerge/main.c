@@ -1,5 +1,5 @@
-// Медленная сортировка обменами + быстрые сортировки: quicksort и mergesort
-// Задача: отсортировать массив в порядке возрастания, числа из массива лежат в промежутке [-100,100]
+// Медленная сортировка обменами + быстрые сортировки: quicksort и mergesort СОРТИРУЮТ ПО КОЛИЧЕСТВУ БИТОВ
+// Задача: отсортировать массив в порядке возрастания КОЛИЧЕСТВА БИТОВ, числа из массива лежат в промежутке [-100,100]
 
 #include <stdio.h>                                                      // библиотека ввода и вывода
 #include <time.h>                                                       // библиотека с clock()
@@ -26,13 +26,13 @@ int main(void)
         printf("Merge sorting time of %d numbers: ", k*N);
 
         t = clock();                                                    // начала отсчета
-        merge_sort(number, k);                                          // сортировка слиянием
+        bit_merge_sort(number, k);                                      // сортировка слиянием
         t = clock() - t;                                                // конец отсчета
 
         fprintf(ftime, "%lf seconds\n", (double)t/CLOCKS_PER_SEC);      // вывод времени в файл
         printf("%lf seconds\n", (double)t/CLOCKS_PER_SEC);
 
-        test_sort(number, k);                                           // проверка сортировки на корректность
+        bit_test_sort(number, k);                                       // проверка сортировки на корректность
 
         mass_read(number, k);                                           // считывание чисел из массива
 
@@ -40,13 +40,13 @@ int main(void)
         printf("Quick sorting time of %d numbers: ", k*N);
 
         t = clock();                                                    // начала отсчета
-        qsort(number, k*N, sizeof(int), bit_compare);                     // библиотечная сортировка
+        qsort(number, k*N, sizeof(int), bit_compare);                   // библиотечная сортировка
         t = clock() - t;                                                // конец отсчета
 
         fprintf(ftime, "%lf seconds\n", (double)t/CLOCKS_PER_SEC);      // вывод времени в файл
         printf("%lf seconds\n", (double)t/CLOCKS_PER_SEC);
 
-        test_sort(number, k);                                           // проверка сортировки на корректность
+        bit_test_sort(number, k);                                       // проверка сортировки на корректность
         printf("\n");
     }
 

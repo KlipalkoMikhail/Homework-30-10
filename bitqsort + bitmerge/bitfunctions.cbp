@@ -55,9 +55,6 @@
 		<Unit filename="min_index.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="slow_sort.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="test_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
