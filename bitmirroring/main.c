@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include "headers.h"
+
+// 112 Клипалко Михаил Михайлович
+
+// зеркальное переставление битового числа
+
+int main(void)
+{
+    int number;                                          // переменная под число
+    char bit_str[8*sizeof(int) + 1];                     // массив, куда будем записывать наши биты
+    printf("To close the program enter any letter\n");
+    printf("\n");
+    printf("Enter number\n");
+
+    while(scanf("%d", &number) == 1)                     // считываем число
+    {
+        to_binary(number, bit_str);                      // определяем, какие биты в этом числе
+        printf("Starting number is %d\n", number);
+        show_bstr(bit_str);                              // выводим на экран битовое представление
+        printf("\n");
+
+        bit_reverse(bit_str);                            // зеркально отображаем биты в данном числе
+        number = bit_mirror(bit_str);                    // присваиваем зеркально отображенное число
+
+        printf("\n");
+        printf("Mirrored number is %d\n", number);
+        show_bstr(bit_str);                              // показываем это число
+    }
+
+    return 0;                                            // конец
+}
