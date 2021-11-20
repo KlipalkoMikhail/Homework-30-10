@@ -1,0 +1,16 @@
+#include "headers.h"
+#include <stdio.h>
+
+// 112 Клипалко Михаил Михайлович
+
+void show_bstr(char * str)                  // вывод бит по 4, параметр - массив из 0 и 1
+{
+    int i = 0;
+    printf("Bit representation is ");
+    while (str[i])
+    {
+        putchar(str[i]);                    // вывод символьного типа через putchar
+        if(++i%4 == 0 && str[i])            // ставим пробел через 4
+            putchar(' ');
+    }
+}
