@@ -31,10 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="bit_analyse.c">
+		<Unit filename="Untitled2" />
+		<Unit filename="bit_compare.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="bit_compare.c">
+		<Unit filename="bit_merge_mass.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bit_merge_sort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bit_test_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
@@ -46,21 +53,17 @@
 		<Unit filename="mass_read.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="merge_mass.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="merge_sort.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="min_index.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="test_sort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="to_binary.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Extensions />
+		<Unit filename="to_binary1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

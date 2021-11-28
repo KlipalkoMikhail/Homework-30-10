@@ -1,7 +1,6 @@
 #include "headers.h"
-#include <stdio.h>
 
-#define N 8000
+#define N 4
 
 // 112 Клипалко Михаил Михайлович
 // функция для сохранения чисел из массива

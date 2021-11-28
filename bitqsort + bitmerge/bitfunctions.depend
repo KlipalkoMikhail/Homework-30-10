@@ -4,10 +4,16 @@
 
 1636270531 c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\headers.h
 
-1636270099 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_compare.c
+1636270632 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\bit_compare.c
 	"headers.h"
 
-1636270574 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_generation.c
+1637332301 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"headers.h"
+
+1637332110 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\mass_generation.c
 	"headers.h"
 	<stdio.h>
 	<stdlib.h>
@@ -16,28 +22,49 @@
 	"headers.h"
 	<stdio.h>
 
-1636269929 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_mass.c
-	"headers.h"
-
-1636270159 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\merge_sort.c
-	"headers.h"
-
 1635579910 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\min_index.c
 	"headers.h"
-
-1636265316 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\slow_sort.c
-	"headers.h"
-
-1636269929 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\test_sort.c
-	"headers.h"
-	<stdio.h>
 
 1636270531 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\to_binary.c
 	"headers.h"
 
-1636270257 source:c:\users\klupa\desktop\programming\algorithms\bitqsort + bitmerge\main.c
-	<stdio.h>
+1638071390 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\main.c
 	<time.h>
 	<stdlib.h>
 	"headers.h"
+
+1638071402 c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\headers.h
+	<stdio.h>
+
+1638069912 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\bit_merge_mass.c
+	"headers.h"
+
+1638069894 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\bit_merge_sort.c
+	"headers.h"
+
+1638070847 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\bit_test_sort.c
+	"headers.h"
+
+1638076031 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\mass_generation.c
+	"headers.h"
+	<stdlib.h>
+
+1638076099 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\mass_read.c
+	"headers.h"
+
+1635579910 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\min_index.c
+	"headers.h"
+
+1638067777 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\to_binary.c
+	"headers.h"
+
+1638070812 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\bit_compare.c
+	"headers.h"
+
+1638067777 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\to_binary1.c
+	"headers.h"
+
+1638067305 source:c:\users\klupa\desktop\Важное\programming\algorithms\bitqsort + bitmerge\bit_test_qsort.c
+	"headers.h"
+	<stdio.h>
 
